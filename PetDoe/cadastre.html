@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Untitled</title>
+<link rel="style" type="text/css" href="cadastre.css">
+<style>
+body {
+    background: rgb(255,112,112);
+background: -moz-linear-gradient(90deg, rgba(255,112,112,1) 0%, rgba(255,231,69,1) 47%, rgba(96,217,255,1) 98%);
+background: -webkit-linear-gradient(90deg, rgba(255,112,112,1) 0%, rgba(255,231,69,1) 47%, rgba(96,217,255,1) 98%);
+background: linear-gradient(90deg, rgba(255,112,112,1) 0%, rgba(255,231,69,1) 47%, rgba(96,217,255,1) 98%);
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+.plans {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.plan {
+  width: 45%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.plan h2 {
+  margin-top: 0;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+}
+
+.plan li {
+  margin-bottom: 5px;
+}
+
+.plan .price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Cadastre-se aqui</h1>
+
+  <h2>DADOS PESSOAIS</h2>
+  <label for="nome">NOME:</label>
+  <input type="text" id="nome" name="nome" required>
+
+  <label for="nomeSocial">NOME SOCIAL:</label>
+  <input type="text" id="nomeSocial" name="nomeSocial">
+
+  <label for="genero">GÊNERO:</label>
+  <input type="radio" id="genero" name="genero" value="Prefiro não dizer" checked>
+  <label for="genero">Prefiro não dizer</label>
+  <input type="radio" id="genero" name="genero" value="Masculino">
+  <label for="genero">Masculino</label>
+  <input type="radio" id="genero" name="genero" value="Feminino">
+  <label for="genero">Feminino</label>
+
+  <label for="cpf">CPF:</label>
+  <input type="text" id="cpf" name="cpf" required>
+
+  <label for="email">E-MAIL:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="senha">SENHA:</label>
+  <input type="password" id="senha" name="senha" required>
+
+  <label for="celular">CELULAR:</label>
+  <input type="tel" id="celular" name="celular" required>
+
+  <label for="dataNascimento">DATA DE NASCIMENTO:</label>
+  <input type="date" id="dataNascimento" name="dataNascimento" required>
+
+  <h2>ENDEREÇO</h2>
+  <label for="rua">RUA:</label>
+  <input type="text" id="rua" name="rua" required>
+
+  <label for="numero">NUMERO:</label>
+  <input type="text" id="numero" name="numero" required>
+
+  <label for="cidade">CIDADE:</label>
+  <input type="text" id="cidade" name="cidade" required>
+
+  <label for="estado">ESTADO:</label>
+  <input type="text" id="estado" name="estado" required>
+
+  <button type="submit">ENVIAR</button>
+
+  <div class="plans">
+    <div class="plan">
+      <h2>Plano</h2>
+      <h3>ASSINATURA GRATIS</h3>
+      <ul>
+        <li>✔ MAPAS</li>
+        <li>• CLINICAS VETERINARIAS</li>
+        <li>• ONGS</li>
+        <li>• CASTRA MOVEL</li>
+        <li>✔ CONTATOS DE ONGS</li>
+        <li>✔ PLATAFORMA DE FREELANCE</li>
+        <li>✔ LEMBRETES DE VACINAS</li>
+      </ul>
+      <div class="price">R$ 00,00</div>
+      <img src="https://img.icons8.com/?size=25&id=1429&format=png" alt="Visa">
+      <img src="https://img.icons8.com/?size=25&id=13610&format=png" alt="Mastercard">
+      <img src="" alt="Hipercard">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAWCAMAAACi/q9qAAAAz1BMVEX///8AAAAApN/uQSP/ygVERET/xgD/yAAAoN6ysrIAm9wAot5AQEBQUFDuPh7Ly8vh4eGgoKDr6+u9vb2BgYH29vaTk5PuORXR0dHtLQDFxcX/7sX/12b/zjT/yxj/0k7/3of/8M3y+f3/2nXn8/uz2/L/1Vw1NTXL5vX/89f/5KD/67r/4JCBxer/9+T/56paWlpnvOcREREdHR0wq+FlZWUnJyek1O9StOTzi3/3t7D73Nl2dnb2qKDsAAD85uTvVT/0mpDxcGDyeWv5y8eHynDoAAAB3UlEQVQ4jZWSfXeaUAzGkwtyBbQCgnC1b6t9c6vbimvtqi1u6/f/TEtyRdjRc3bMH7yE50eeJBfAxuT0zD2/uPwEx8bEc11Xa30+OQK64ot2bXjTQ5JiMNhPXgc3dJ16VI9JfXsAvEPcT6owuAeYfZ58uRRUP+xrOgfAeVcpJiUeuFXv6/Yt8mM/+RdMKBXZBgOlVPe6/s03qqlPrYbUFN+TNlhwqsOpJRXs3jQGbrWrPSmHdUQ1mIwAbKoAeAxVqFrOZ553NmWv9Lk3jPwSsazBBfrgxymTGfwgcN7ueWZvPuIT34ekii1IKTGcPSOOgDtc7o+RpRlpSYOlb8E+4hC2XXQYDA+B/PcRm+qP6+HgbifUIryQ1ZcWkDk/X1dQDwHXUbOOBiQvMA9pjVcN+GZy814B9BgbZY1xSRV2Uficwj3tsVWyMo5zsqGHGO98yUhNAWPEhaSo2TXwWFVQd1k5J45jXtkNneq0SMY9niCDPntN6bjLwBI+46r7SEJyVf0yxOUb2G1EgkbJu+vDgBZUSkrMLAN2+vZujMkdMmrqxhaiKaWvp21/9jyNrUB8bqgWR55Xu4YH6TrdauS4MUipYXttPBTGzO8Mjgpxasyf1XEYRbb6+Kj+L9vFX/IMIOjxO+jxAAAAAElFTkSuQmCC" alt="Elo">
+    </div>
+    <div class="plan">
+      <h2>Plano</h2>
+      <h3>ASSINATURA PREMIUM</h3>
+      <ul>
+        <li>✔ CLUBE DE DESCONTOS</li>
+        <li>• 15% OFF EM VETERINÁRIOS E ADESTADORES</li>
+        <li>• 10% OFF EM HOSPEDAGEM, PET SITTER & DOG WALKER</li>
+        <li>• 10% OFF EM PETSHOP'S</li>
+        <li>✔ FÓRUM INTERATIVO</li>
+        <li>✔ CHATBOOT</li>
+      </ul>
+      <div class="price">R$ 15,90</div>
+      <img src="https://img.icons8.com/?size=25&id=1429&format=png" alt="Visa">
+      <img src="https://img.icons8.com/?size=25&id=13610&format=png" alt="Mastercard">
+      <img src="hipe5r-png.png" alt="Hipercard">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAWCAMAAACi/q9qAAAAz1BMVEX///8AAAAApN/uQSP/ygVERET/xgD/yAAAoN6ysrIAm9wAot5AQEBQUFDuPh7Ly8vh4eGgoKDr6+u9vb2BgYH29vaTk5PuORXR0dHtLQDFxcX/7sX/12b/zjT/yxj/0k7/3of/8M3y+f3/2nXn8/uz2/L/1Vw1NTXL5vX/89f/5KD/67r/4JCBxer/9+T/56paWlpnvOcREREdHR0wq+FlZWUnJyek1O9StOTzi3/3t7D73Nl2dnb2qKDsAAD85uTvVT/0mpDxcGDyeWv5y8eHynDoAAAB3UlEQVQ4jZWSfXeaUAzGkwtyBbQCgnC1b6t9c6vbimvtqi1u6/f/TEtyRdjRc3bMH7yE50eeJBfAxuT0zD2/uPwEx8bEc11Xa30+OQK64ot2bXjTQ5JiMNhPXgc3dJ16VI9JfXsAvEPcT6owuAeYfZ58uRRUP+xrOgfAeVcpJiUeuFXv6/Yt8mM/+RdMKBXZBgOlVPe6/s03qqlPrYbUFN+TNlhwqsOpJRXs3jQGbrWrPSmHdUQ1mIwAbKoAeAxVqFrOZ553NmWv9Lk3jPwSsazBBfrgxymTGfwgcN7ueWZvPuIT34ekii1IKTGcPSOOgDtc7o+RpRlpSYOlb8E+4hC2XXQYDA+B/PcRm+qP6+HgbifUIryQ1ZcWkDk/X1dQDwHXUbOOBiQvMA9pjVcN+GZy814B9BgbZY1xSRV2Uficwj3tsVWyMo5zsqGHGO98yUhNAWPEhaSo2TXwWFVQd1k5J45jXtkNneq0SMY9niCDPntN6bjLwBI+46r7SEJyVf0yxOUb2G1EgkbJu+vDgBZUSkrMLAN2+vZujMkdMmrqxhaiKaWvp21/9jyNrUB8bqgWR55Xu4YH6TrdauS4MUipYXttPBTGzO8Mjgpxasyf1XEYRbb6+Kj+L9vFX/IMIOjxO+jxAAAAAElFTkSuQmCC" alt="Elo">
+    </div>
+  </div>
+</div>
+
+</body>
+</html
